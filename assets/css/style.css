@@ -4,6 +4,11 @@ body {
     line-height: 1;
   }
   
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   textarea{
     background: transparent;
     border: none;
@@ -78,9 +83,9 @@ body {
 
   #notification {
     position:center;
+    height: 20px;
     top:0px;
     width:100%;
-    z-index: index 90;;
     text-align:center;
     font-weight:normal;
     font-size:14px;

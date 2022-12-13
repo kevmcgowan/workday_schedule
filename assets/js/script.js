@@ -3,6 +3,13 @@ $('#currentDay').text(moment().format('dddd MMMM Do YYYY, HH:mm'));
 // Moment Current time 
 var currHour = moment().hour();
 
+  // Button function to clear local storage and clear contents
+  $('#clearFieldsBtn').click(function (event) {
+    event.preventDefault;
+    $('textarea').val('');
+    localStorage.clear('');
+  });
+
 
 //Click of the save button stores values in Local Storage
 $('.saveBtn').on('click', function(){
@@ -14,10 +21,10 @@ $('.saveBtn').on('click', function(){
     
     //Store event in localStorage in key/value format
     localStorage.setItem(hour, event);
+    
     // Fade notification out then clear
     $("#notification").fadeIn().append('Appointment Saved to localStorage').delay(2000).fadeOut();
-    $('#notification').val('');
-    // });
+    $('notification').val();
 });
 
 //grab the stored value from localStorage and show inside the text area
