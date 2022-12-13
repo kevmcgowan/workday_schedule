@@ -49,4 +49,4 @@ https://kevmcgowan.github.io/workday_schedule/
 https://github.com/kevmcgowan/workday_schedule
 
 ---
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+© 2022 Kevin McGowan Confidential and Proprietary. All Rights Reserved.
