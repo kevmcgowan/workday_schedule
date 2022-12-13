@@ -18,11 +18,13 @@ body {
     margin-top: 10px;
     background-color: #77dd77;
   }
-  /* .container {
+  .container-fluid {
+    margin-left: 75px;
     display: flex;
     flex-direction: column;
+    grid-template-rows: max-content;
     justify-content: center;
-  } */
+  }
   textarea{
     background: transparent;
     border: none;
