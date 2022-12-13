@@ -4,25 +4,21 @@ $('#currentDay').text(moment().format('dddd MMMM Do YYYY, HH:mm'));
 var currHour = moment().hour();
 
   // Button function to clear local storage and clear contents
-  $('#clearFieldsBtn').click(function (event) {
+  $('#resetBtn').click(function (event) {
     event.preventDefault;
     $('textarea').val('');
     localStorage.clear('');
   });
 
-
-//Click of the save button stores values in Local Storage
+//Click of the save button stores values in Local Storage and displays popup confirmation
 $('.saveBtn').on('click', function(){
-    //grab hour.
+    
     var hour = $(this).siblings('.hour').text();
     
-    //grab the information from textarea
     var event = $(this).siblings('.event-text').val();
     
-    //Store event in localStorage in key/value format
     localStorage.setItem(hour, event);
     
-    // Fade notification out then clear
     $("#notification").fadeIn().append('Appointment Saved to localStorage').delay(2000).fadeOut();
     $('notification').val();
 });
@@ -48,19 +44,3 @@ $('.time-block').each(function(i){
     }  
 })
 })
-
-
-
-
-       
-    
-    
-
-
-
-   
-        
-        
-    
-       
-        
