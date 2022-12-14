@@ -20,9 +20,6 @@ body {
   }
   .container-fluid {
     margin-left: 75px;
-    display: flex;
-    flex-direction: column;
-    grid-template-rows: max-content;
     justify-content: center;
   }
   textarea{
