@@ -39,6 +39,19 @@ body {
     border-bottom: 10px solid black;
   }
   
+  #notification {
+    position:center;
+    height: 20px;
+    top:0px;
+    width:100%;
+    text-align:center;
+    font-weight:normal;
+    font-size:14px;
+    font-weight:bold;
+    color:black;
+    padding:5px;
+}
+
   .description{
     white-space: pre-wrap;
   }
@@ -49,8 +62,9 @@ body {
   }
   
   .row {
+    display: flex;
     white-space: pre-wrap;
-    height: 50px;
+    height: 100px;
     border-top: 1px solid white;;
   }
   
@@ -59,6 +73,9 @@ body {
   }
   
   .hour {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #ffffff;
     color: #000000;
     border-top: 1px dashed #000000;
@@ -94,16 +111,5 @@ body {
     transition: all .3s ease-in-out;
   }
 
-  #notification {
-    position:center;
-    height: 20px;
-    top:0px;
-    width:100%;
-    text-align:center;
-    font-weight:normal;
-    font-size:14px;
-    font-weight:bold;
-    color:black;
-    padding:5px;
-}
+  
 

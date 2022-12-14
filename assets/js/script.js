@@ -10,6 +10,11 @@ var currHour = moment().hour();
     localStorage.clear('');
   });
 
+//   $('.saveBtn').on('click', function(){
+//     $('#notification').val('');
+//   }
+
+
 //Click of the save button stores values in Local Storage and displays popup confirmation
 $('.saveBtn').on('click', function(){
     
@@ -19,8 +24,12 @@ $('.saveBtn').on('click', function(){
     
     localStorage.setItem(hour, event);
     
-    $("#notification").fadeIn().append('Appointment Saved to localStorage').delay(2000).fadeOut();
-    $('notification').val();
+    // var notification = document.querySelector('notification')
+    // notification.textContent = 'Appointment Saved to localStorage';
+    // notification.textContent = '';
+    $('#notification').fadeIn().text('Appointment Saved to localStorage').delay(2000).fadeOut();
+    $('#notification').attr('value', '');
+    console.log('#notification')
 });
 
 //grab the stored value from localStorage and show inside the text area
