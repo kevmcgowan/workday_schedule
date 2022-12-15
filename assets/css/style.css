@@ -50,7 +50,11 @@ body {
     font-weight:bold;
     color:black;
     padding:5px;
-}
+  }
+
+  span {
+    color: red;
+  }
 
   .description{
     white-space: pre-wrap;

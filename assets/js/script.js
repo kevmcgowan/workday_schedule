@@ -27,7 +27,7 @@ $('.saveBtn').on('click', function(){
     // var notification = document.querySelector('notification')
     // notification.textContent = 'Appointment Saved to localStorage';
     // notification.textContent = '';
-    $('#notification').fadeIn().text('Appointment Saved to localStorage').delay(2000).fadeOut();
+    $('#notification').fadeIn().html('Appointment Saved to <span>localStorage</span>').delay(2000).fadeOut();
     $('#notification').attr('value', '');
     console.log('#notification')
 });
